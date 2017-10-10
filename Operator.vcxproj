@@ -146,10 +146,20 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Data.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Datatype.h" />
+    <ClInclude Include="Filter.h" />
+    <ClInclude Include="Operations.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Data.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Datatype.cpp" />
+    <ClCompile Include="Filter.cpp" />
+    <ClCompile Include="Operations.cpp" />
     <ClCompile Include="Operator.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

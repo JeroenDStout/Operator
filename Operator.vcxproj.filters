@@ -24,12 +24,42 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Database.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Datatype.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Filter.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Operations.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Operator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Database.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Datatype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Operations.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

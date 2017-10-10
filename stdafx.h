@@ -10,6 +10,6 @@
 #include <stdio.h>
 #include <tchar.h>
 
-
+typedef unsigned long uint32;
 
 // TODO: reference additional headers your program requires here

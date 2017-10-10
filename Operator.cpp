@@ -25,6 +25,8 @@ int main()
     datatype_id peep3[] = { type_peep_name.hash, type_peep_location.hash, type_peep_eating.hash, 0 };
     datatype_id peep4[] = { type_peep_name.hash, 0 };
     
+    std::cout << "Adding entities\n\n";
+
     data.hard_add_entity(namegiver);
     datatype_id peep_id0 = data.hard_add_entity(peep0);
     datatype_id peep_id1 = data.hard_add_entity(peep1);

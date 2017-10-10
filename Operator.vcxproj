@@ -159,7 +159,6 @@
     <ClCompile Include="Database.cpp" />
     <ClCompile Include="Datatype.cpp" />
     <ClCompile Include="Filter.cpp" />
-    <ClCompile Include="Operations.cpp" />
     <ClCompile Include="Operator.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

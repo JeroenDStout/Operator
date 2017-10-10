@@ -15,8 +15,7 @@ inline void operation_namegiver_hello(void *arg, database *)
     std::cout << "Saying hello for " << instr.count << " namegivers.\n";
 
     for (uint32_t i = 0; i < instr.count; i++) {
-        (**instr.namegiver).index = 0;
-        instr.namegiver++;
+        instr.namegiver[i]->index = 0;
     }
 }
 
@@ -35,10 +34,9 @@ inline void operation_give_name(void *arg, database *)
     static const char *names[] = { "Bob", "Michael", "Sarah", "Fran", "Steve" };
 
     for (uint32_t i = 0; i < instr.count; i++) {
-        const char *name = names[(*instr.namegiver)->index];
-        memcpy((*instr.peep_name)->name, name, strlen(name) + 1);
-        (*instr.namegiver)->index++;
-        instr.peep_name++;
+        const char *name = names[instr.namegiver[0]->index];
+        memcpy(instr.peep_name[i]->name, name, strlen(name) + 1);
+        instr.namegiver[0]->index++;
     }
 }
 
@@ -52,8 +50,7 @@ inline void operation_shout_name(void *arg, database *)
     operation_shout_name_instr &instr = *(operation_shout_name_instr*)arg;
     
     for (uint32_t i = 0; i < instr.count; i++) {
-        std::cout << "Hey I am " << (**instr.peep_name).name << " and you better know it!\n";
-        instr.peep_name++;
+        std::cout << "I am " << instr.peep_name[i]->name << "!\n";
     }
 }
 
@@ -68,7 +65,6 @@ inline void operation_shout_food(void *arg, database *)
     operation_food_instr &instr = *(operation_food_instr*)arg;
     
     for (uint32_t i = 0; i < instr.count; i++) {
-        std::cout << "Hey I am " << (**instr.peep_name).name << " and I have food!\n";
-        instr.peep_name++;
+        std::cout << "I have food! I am " << instr.peep_name[i]->name << ".\n";
     }
 }
